@@ -1,10 +1,22 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e6f7ff; /* Light cyan background */
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
 
+/* Logo styles */
 .App-logo {
-  height: 40vmin;
+  height: 50px;
   pointer-events: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,8 +25,9 @@
   }
 }
 
+/* Header styles */
 .App-header {
-  background-color: #282c34;
+  background-color: #0073e6; /* Bright blue */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,10 +37,114 @@
   color: white;
 }
 
+/* Link styles */
 .App-link {
-  color: #61dafb;
+  color: #ffcc00; /* Bright yellow */
+  text-decoration: none;
+  font-weight: bold;
 }
 
+.App-link:hover {
+  color: #ff6600; /* Bright orange */
+}
+
+/* Navigation styles */
+nav {
+  background-color: #004080; /* Navy blue */
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #ffcc00; /* Bright yellow */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff6600; /* Bright orange */
+  text-decoration: underline;
+}
+
+/* Table styles */
+table {
+  width: 90%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+table th {
+  background-color: #0073e6; /* Bright blue */
+  color: white;
+  font-size: 1.2rem;
+}
+
+table tr:nth-child(even) {
+  background-color: #e6f7ff; /* Light cyan */
+}
+
+table tr:hover {
+  background-color: #cceeff; /* Lighter cyan */
+}
+
+/* Button styles */
+button {
+  background-color: #0073e6; /* Bright blue */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005bb5; /* Darker blue */
+}
+
+/* Heading styles */
+h1 {
+  color: #004080; /* Navy blue */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Favicon styles */
+.App-favicon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+}
+
+/* Keyframes */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
